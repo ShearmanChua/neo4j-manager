@@ -8,6 +8,7 @@ services:
     ports:
       - 7687:7687
       - 7474:7474
+      - 80:80
     volumes:
       - .:/neo4j-manager
     ulimits:

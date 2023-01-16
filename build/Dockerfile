@@ -16,6 +16,6 @@ RUN pip install fastapi pandas requests && pip install "uvicorn[standard]"
 
 RUN mkdir /neo4j-manager
 COPY . /neo4j-manager/
-WORKDIR /neo4j-manager
+WORKDIR /neo4j-manager/src
 
-CMD ["/bin/bash"]
+ENTRYPOINT ["streamlit", "run", "app/neo4j_app.py", "--server.port=8501", "--server.address=0.0.0.0"]

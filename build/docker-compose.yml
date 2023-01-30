@@ -1,6 +1,10 @@
+version: '3.4'
+
 services:
   neo4j:
-    image: neo4j_docker
+    build: ../
+    environment:
+      NEO4J_AUTH: neo4j/password
     stdin_open: true
     tty: true
     environment:
@@ -13,7 +17,7 @@ services:
       - ${NEO4J_HTTP_PORT}:${NEO4J_HTTP_PORT}
       - ${STREAMLIT_PORT}:${STREAMLIT_PORT}
     volumes:
-      - .:/neo4j-manager
+      - ../src:/neo4j-manager/src
     ulimits:
       memlock: -1 # set upper limit for how much memory is locked for the container (-1 means lock as much as the container uses)
     shm_size: 32gb # set upper limit for how much shared memory container can use

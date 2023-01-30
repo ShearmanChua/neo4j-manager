@@ -1,14 +1,17 @@
 services:
   neo4j:
     image: neo4j_docker
-    environment:
-      NEO4J_AUTH: neo4j/password
     stdin_open: true
     tty: true
+    environment:
+      NEO4J_AUTH: ${NEO4J_USERNAME}/${NEO4J_PASSWORD}
+      URL_NEO4J: ${NEO4J_URL}
+      PASSWORD_NEO4J: ${NEO4J_PASSWORD}
+      USERNAME_NEO4J: ${NEO4J_USERNAME}
     ports:
-      - 7687:7687
-      - 7474:7474
-      - 80:80
+      - ${NEO4J_BOLT_PORT}:${NEO4J_BOLT_PORT}
+      - ${NEO4J_HTTP_PORT}:${NEO4J_HTTP_PORT}
+      - ${STREAMLIT_PORT}:${STREAMLIT_PORT}
     volumes:
       - .:/neo4j-manager
     ulimits:

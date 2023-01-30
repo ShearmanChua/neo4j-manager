@@ -99,15 +99,15 @@ class Neo4jManager():
 
         with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
             node_labels = ":".join(node_labels)
-            node_attributes = "{"+", ".join([re.sub('[^A-Za-z0-9]+', '_', k)+" : '"+str(node_attributes[k]).replace(
-                "'", "").encode("ascii", "ignore").decode()+"'" for k in node_attributes.keys() if not k[0].isdigit()])+"}"
+            node_attributes = "{" + ", ".join([re.sub('[^A-Za-z0-9]+', '_', k.lower())+" : '" + str(node_attributes[k]).replace(
+                "'", "").encode("ascii", "ignore").decode() + "'" for k in node_attributes.keys() if not k[0].isdigit()]) + "}"
 
             print("MERGE (n:{} {}) RETURN n".format(node_labels, node_attributes))
             print("\n")
 
-            return session.run("MERGE (n:{} {}) RETURN n".format(node_labels, node_attributes)).single().value()
+            return session.run("MERGE (n:{} {}) RETURN n".format(node_labels, node_attributes))
 
-    def create_node(self, node_collection: str, nodes: List[dict], node_id_field: str, node_labels: List[str] = []):
+    def create_nodes(self, node_collection: str, nodes: List[dict], node_id_field: str, node_labels: List[str] = []):
         '''Create nodes given a List of dictionary of node attributes
 
            node_collection: the node type of the node to be generated
@@ -139,8 +139,22 @@ class Neo4jManager():
         for label in node_labels:
             self.create_constraint(label.lower(), label, node_id_field)
 
-    
+    def merge_edge(self, source_node_label, source_node_attribute_to_match, target_node_label, target_node_attribute_to_match, relation: str, relation_properties: dict, db=None):
+        ''''''
 
+        with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
+            source_node_label = source_node_label.capitalize()
+            target_node_label = target_node_label.capitalize()
+            source_node_attribute_to_match = source_node_attribute_to_match.lower()
+            target_node_attribute_to_match = target_node_attribute_to_match.lower()
+            relation = relation.upper()
+
+            edge_attributes = "{" + ", ".join(
+                [k.lower() + " : '"+ relation_properties[k]+"'" for k in relation_properties.keys()])+"}"
+
+            # .single().value()
+            return session.run("MATCH (s:{}) MATCH(t:{}) WHERE s.{} = t.{} MERGE (s)-[e:{} {}]->(t) RETURN *".format(source_node_label, target_node_label, source_node_attribute_to_match, target_node_attribute_to_match, relation, edge_attributes))
+    
     def merge_edge_from_triples(self, source_node_label, source_node_attribute, target_node_label, target_node_attribute, relation_type, edge_attributes, db=None):
 
         with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
@@ -190,4 +204,11 @@ class Neo4jManager():
 
             self.merge_edge_from_triples(source_node_labels, source_node_attributes, target_node_labels,
                     target_node_attributes, relation_type, edge_attributes, db)
+
+    def list_all_node_types(self, db=None):
+        ''''''
+
+        with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
+            node_types = session.run("MATCH (n) RETURN distinct labels(n)")
+            node_types = [label.value() for label in node_types]
     

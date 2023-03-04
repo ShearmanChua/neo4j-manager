@@ -167,8 +167,20 @@ class Neo4jManager():
             # .single().value()
             return session.run("MATCH (s:{} {}), (t:{} {}) MERGE (s)<-[e:{} {}]-(t) RETURN e".format(source_node_label, source_attributes, target_node_label, target_attributes, relation_type, edge_attributes))
 
-    def generate_edges_from_triples(self, collection_name: str, entities_triples: Union[pd.DataFrame,List[dict]], db=None):
-        ''''''
+    def generate_edges_from_triples(self, entities_triples: Union[pd.DataFrame,List[dict]], db=None):
+        '''Generate relationship edges when provided with either a dataframe or a list of dictionary containing triples
+           Properties that are required in the dataframe or dictionary includes:
+            Subject: Dictionary of attributes for the Subject node, MUST include "node labels" attribute
+            Object: Dictionary of attributes for the Object node, MUST include "node labels" attribute
+            Predicate: Dictionary of attributes for the relationship between the nodes, MUST include "relation_type"
+
+           Example:
+           {
+            "Subject": {"node_labels": ["vessel"], "weight":100tonnes}, 
+            "Object": {"node_labels": ["engine"], "engine_name":xxx_engine},
+            "Predicate": {"relation_type":"main_engine"}
+           }
+        '''
 
         if type(entities_triples) != pd.DataFrame:
             entities_triples = pd.json_normalize(entities_triples, max_level=0)
@@ -200,10 +212,21 @@ class Neo4jManager():
                 if type(edge_attribute) == datetime:
                     neo4j_datetime = DateTime(edge_attribute.year, edge_attribute.month, edge_attribute.day, edge_attribute.minute, edge_attribute.second)
                     edge_attributes.update({key, neo4j_datetime})
-            edge_attributes['neo4j_collection'] = collection_name
 
             self.merge_edge_from_triples(source_node_labels, source_node_attributes, target_node_labels,
                     target_node_attributes, relation_type, edge_attributes, db)
+            
+    def create_relations(self, source_node_label: str, source_node_attribute_to_match: str, target_node_label: str, target_node_attribute_to_match: str, relation: str, relation_properties: dict, db=None):
+        '''Create relations between nodes in the neo4j database
+
+            source_node_label: Label of the source node in the relation
+            source_node_attribute_to_match: the attribute of the source node to match to the target node on e.g. "product_name"
+            target_node_label: Label of the target node in the relation
+            target_node_attribute_to_match: the attribute of the target node to match to the source node on e.g. "contains_product"
+            relation: name of the relation e.g. "contains_product"
+            relation_properties: any relation properties you want to add to the relationship, in a dictionary format
+        '''
+        self.merge_edge(source_node_label, source_node_attribute_to_match, target_node_label, target_node_attribute_to_match, relation, relation_properties, db)
 
     def list_all_node_types(self, db=None):
         ''''''

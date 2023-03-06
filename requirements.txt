@@ -5,3 +5,4 @@ typing
 pydantic
 fastapi
 requests
+tqdm

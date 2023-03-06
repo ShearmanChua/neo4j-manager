@@ -13,7 +13,11 @@ st.sidebar.title(config["sidebar_title"])
 
 # sidebar dropdown selection
 action = st.sidebar.selectbox(
-    "Select action", ("🔍 Search", "👮 Admin", "📈 Node Population", "🔀 Relation Population")
+    "Select action", ("👮 Admin", "📈 Node Population", "🔀 Relation Population")
 )
 
 st.sidebar.markdown("---")
+
+neo4j_db = config["neo4j_db"]
+
+

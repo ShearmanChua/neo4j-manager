@@ -4,7 +4,14 @@ FROM python:3.8.15-slim-buster
 ENV PYTHONDONTWRITEBYTECODE 1
 
 # Turns off buffering for easier container logging
-ENV PYTpip install "uvicorn[standard]"
+ENV PYTHONUNBUFFERED 1
+
+RUN pip install -U pip
+
+COPY requirements.txt .
+RUN pip install -r requirements.txt
+
+RUN pip install "uvicorn[standard]"
 
 RUN mkdir /neo4j-manager && mkdir /neo4j-manager/src
 COPY . /neo4j-manager/

@@ -89,6 +89,11 @@ async def create_relations_triples(request: Request):
 async def get_nodes():
     '''
         Get all node types
+
+        returns a dictionary of node types
+        {
+            "node_types": [list of node types]
+        }
     '''
 
     node_types = neo4j_manager.list_all_node_types()
@@ -99,6 +104,10 @@ async def get_nodes():
 async def get_relations():
     '''
         Get all relation types
+        returns a dictionary of relation types
+        {
+            "relation_types": [list of relation types]
+        }
     '''
 
     relation_types = neo4j_manager.list_all_relation_types()
@@ -143,7 +152,7 @@ async def delete_node(request: Request):
     return
 
 @app.post("/delete_relation")
-async def delete_node(request: Request):
+async def delete_relation(request: Request):
     '''Delete all relations of relation_type in neo4j'''
 
     dict_str = await request.json()

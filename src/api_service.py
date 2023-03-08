@@ -34,7 +34,7 @@ async def create_nodes(request: Request):
     '''
     
     dict_str = await request.json()
-    nodes_json = json.dumps(dict_str)
+    nodes_json = dict_str
     neo4j_manager.create_nodes(node_collection=nodes_json['node_collection'], 
                                nodes=nodes_json['nodes'],
                                node_id_field=nodes_json['node_id_field'],
@@ -52,15 +52,17 @@ async def create_relations(request: Request):
             relation_properties: any relation properties you want to add to the relationship, in a dictionary format
     '''
     dict_str = await request.json()
-    relation_json = json.dumps(dict_str)
+    relation_json = dict_str
 
     neo4j_manager.create_relations(source_node_label=relation_json['source_node_label'],
                                    source_node_attribute_to_match=relation_json['source_node_attribute_to_match'],
                                    target_node_label=relation_json['target_node_label'],
-                                   target_node_attribute_to_match=relation_json['target_node_attribute_to_match'])
+                                   target_node_attribute_to_match=relation_json['target_node_attribute_to_match'],
+                                   relation=relation_json['relation'],
+                                   relation_properties=relation_json['relation_properties'])
     
 @app.post("/create_relations_triples")
-async def create_relations(request: Request):
+async def create_relations_triples(request: Request):
     '''Generate relationship edges when provided with either a dataframe or a list of dictionary containing triples
            Properties that are required in the dataframe or dictionary includes:
             Subject: Dictionary of attributes for the Subject node, MUST include "node labels" attribute
@@ -75,11 +77,77 @@ async def create_relations(request: Request):
            }
     '''
     dict_str = await request.json()
-    triples_json = json.dumps(dict_str)
+    triples_json = dict_str
     df = pd.read_json(triples_json, orient="records")
     df = df.reset_index(drop=True)
     print(df.head())
     print(df.info())
 
     neo4j_manager.generate_edges_from_triples(entities_triples=df)
+
+@app.post("/get_nodes")
+async def get_nodes():
+    '''
+        Get all node types
+    '''
+
+    node_types = neo4j_manager.list_all_node_types()
+
+    return {"node_types": node_types}
+
+@app.post("/get_relations")
+async def get_relations():
+    '''
+        Get all relation types
+    '''
+
+    relation_types = neo4j_manager.list_all_relation_types()
+
+    return {"relation_types": relation_types}
+
+@app.post("/get_node_properties")
+async def get_node_properties(request: Request):
+    '''
+        Get all node attributes given a node_type
+        pass in a request with a json with the node_type
+
+        Example:
+        {
+            "node_type": "Vessel"
+        }
+
+        return {
+            "node_properties": [list of node_properties]
+        }
+    '''
+    dict_str = await request.json()
+    node_properties = neo4j_manager.list_all_node_properties(dict_str['node_type'])
+
+    return {"node_properties": node_properties}
+
+@app.post("/delete_all")
+async def delete_all():
+    '''Delete all nodes and relations in neo4j'''
+
+    neo4j_manager.delete_all()
+
+    return
+
+@app.post("/delete_node")
+async def delete_node(request: Request):
+    '''Delete all nodes of node_type in neo4j'''
+
+    dict_str = await request.json()
+    neo4j_manager.delete_node(dict_str['node_type'])
+
+    return
+
+@app.post("/delete_relation")
+async def delete_node(request: Request):
+    '''Delete all relations of relation_type in neo4j'''
+
+    dict_str = await request.json()
+    neo4j_manager.delete_relation(dict_str['relation_type'])
+
+    return
     

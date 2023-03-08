@@ -84,7 +84,7 @@ class Neo4jManager():
            node_label(Uppercase) to be constrained, and the node_id to constraint on'''
 
         with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
-            return session.run("CREATE CONSTRAINT {} IF NOT EXISTS ON (n:{}) ASSERT n.{} IS UNIQUE".format(constraint_name, node_label, node_id))
+            return session.run("CREATE CONSTRAINT {} IF NOT EXISTS FOR (n:{}) REQUIRE n.{} IS UNIQUE".format(constraint_name, node_label, node_id))
 
     def merge_node(self, node_labels: List[str], node_attributes: dict, db=None):
         ''' Create new nodes using th MERGE cypher query
@@ -124,7 +124,7 @@ class Neo4jManager():
 
         for node in tqdm(nodes):
             node_attributes = node.copy()
-            for key,node_attribute in node_attributes:
+            for key,node_attribute in node_attributes.items():
                 if isinstance(node_attribute, datetime):
                     neo4j_datetime = DateTime(node_attribute.year, node_attribute.month, node_attribute.day, node_attribute.minute, node_attribute.second)
                     node_attributes.update({key, neo4j_datetime})
@@ -234,4 +234,44 @@ class Neo4jManager():
         with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
             node_types = session.run("MATCH (n) RETURN distinct labels(n)")
             node_types = [label.value() for label in node_types]
-    
+        node_types_expanded = []
+        for node_type in node_types:
+            node_types_expanded.extend(node_type)
+        node_types_expanded = list(dict.fromkeys(node_types_expanded))    
+
+        return node_types_expanded
+
+    def list_all_node_properties(self, node_type: str, db=None):
+        ''''''
+
+        with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
+            node_properties = session.run("MATCH (n:{}) RETURN properties(n)".format(node_type))
+            node_properties = node_properties.value()[0]
+            print(node_properties)
+
+        node_properties = list(node_properties.keys())
+        
+        return node_properties
+
+    def delete_all(self, db=None):
+        with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
+            session.run("MATCH (n) DETACH DELETE n")
+
+        return
+
+    def delete_node(self, node_type: str, db=None):
+        with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
+            session.run("MATCH (n:{}) DETACH DELETE n".format(node_type))
+
+        return
+
+    def list_all_relation_types(self, db=None):
+        with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
+            relation_types = session.run("MATCH ()-[r]->() RETURN TYPE(r)")
+            relation_types = [relation.value() for relation in relation_types]
+            relation_types = list(dict.fromkeys(relation_types))
+        return relation_types
+
+    def delete_relation(self, relation_type:str, db=None):
+        with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
+            session.run("MATCH ()-[r:{}]->() DETACH DELETE r".format(relation_type))

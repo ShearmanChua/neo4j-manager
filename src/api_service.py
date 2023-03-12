@@ -85,7 +85,7 @@ async def create_relations_triples(request: Request):
 
     neo4j_manager.generate_edges_from_triples(entities_triples=df)
 
-@app.post("/get_nodes")
+@app.get("/get_nodes")
 async def get_nodes():
     '''
         Get all node types
@@ -100,7 +100,7 @@ async def get_nodes():
 
     return {"node_types": node_types}
 
-@app.post("/get_relations")
+@app.get("/get_relations")
 async def get_relations():
     '''
         Get all relation types
@@ -114,7 +114,7 @@ async def get_relations():
 
     return {"relation_types": relation_types}
 
-@app.post("/get_node_properties")
+@app.get("/get_node_properties")
 async def get_node_properties(request: Request):
     '''
         Get all node attributes given a node_type
@@ -134,7 +134,7 @@ async def get_node_properties(request: Request):
 
     return {"node_properties": node_properties}
 
-@app.post("/delete_all")
+@app.delete("/delete_all")
 async def delete_all():
     '''Delete all nodes and relations in neo4j'''
 
@@ -142,7 +142,7 @@ async def delete_all():
 
     return
 
-@app.post("/delete_node")
+@app.delete("/delete_node")
 async def delete_node(request: Request):
     '''Delete all nodes of node_type in neo4j'''
 
@@ -151,7 +151,7 @@ async def delete_node(request: Request):
 
     return
 
-@app.post("/delete_relation")
+@app.delete("/delete_relation")
 async def delete_relation(request: Request):
     '''Delete all relations of relation_type in neo4j'''
 

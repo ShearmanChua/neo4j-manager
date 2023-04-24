@@ -1,5 +1,7 @@
 neo4j
 streamlit
+streamlit-agraph
+SPARQLWrapper
 pandas
 typing
 pydantic

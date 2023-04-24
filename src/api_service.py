@@ -134,6 +134,26 @@ async def get_node_properties(request: Request):
 
     return {"node_properties": node_properties}
 
+@app.get("/get_all_triples")
+async def get_all_triples():
+    '''
+        Get all triples in neo4j
+    '''
+
+    triples = neo4j_manager.get_all_triples()
+
+    return {"triples": triples}
+
+@app.get("/get_page_rank")
+async def get_page_rank(request: Request):
+    '''
+        Get pageRank in neo4j
+    '''
+    dict_str = await request.json()
+    ranking = neo4j_manager.get_page_rank(dict_str['node_type'],dict_str['relation_type'])
+
+    return {"ranking": ranking}
+
 @app.delete("/delete_all")
 async def delete_all():
     '''Delete all nodes and relations in neo4j'''

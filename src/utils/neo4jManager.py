@@ -246,8 +246,13 @@ class Neo4jManager():
 
         with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
             node_properties = session.run("MATCH (n:{}) RETURN properties(n)".format(node_type))
-            node_properties = node_properties.value()[0]
-            print(node_properties)
+            node_properties_results = node_properties.value()
+            node_properties ={}
+            for node in node_properties_results:
+                for key,value in node.items():
+                    if key not in node_properties:
+                        node_properties[key] = value
+
 
         node_properties = list(node_properties.keys())
         
@@ -275,3 +280,21 @@ class Neo4jManager():
     def delete_relation(self, relation_type:str, db=None):
         with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
             session.run("MATCH ()-[r:{}]->() DETACH DELETE r".format(relation_type))
+
+    def get_all_triples(self, db=None):
+        with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
+            triples = session.run("MATCH (n)-[r]->(n2) RETURN properties(n), properties(r), properties(n2)").data()
+            df = pd.DataFrame(triples)
+            print(df.info())
+        return df.to_dict('records')
+    
+    def get_page_rank(self, nodeTypes, relationTypes, db=None):
+        with self.neo4j_conn.driver.session(database=db) if db is not None else self.neo4j_conn.driver.session() as session:
+            nodeTypes = ["'"+node+"'" for node in nodeTypes]
+            relationTypes = ["'"+relation+"'" for relation in relationTypes]
+            session.run("CALL gds.graph.project('myGraph',[{}],[{}])".format(",".join(nodeTypes),",".join(relationTypes)))
+            ranks = session.run("CALL gds.pageRank.stream('myGraph') YIELD nodeId, score RETURN gds.util.asNode(nodeId).node_id AS name, score ORDER BY score DESC, name ASC").data()
+            session.run("CALL gds.graph.drop('myGraph') YIELD graphName")
+            df = pd.DataFrame(ranks)
+            print(df.info())
+        return df.to_dict('records')

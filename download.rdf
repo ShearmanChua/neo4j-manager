@@ -1,0 +1,2963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fuel_type">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#towed_sonar">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#navigation_radar_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_charge_quantity">
+	<rdfs:label>mine_countermeasures_charge_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasure_rounds_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#helicopter">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav_manufacturer">
+	<rdfs:label>uav_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_classification_1">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MAINTAINED_BY">
+	<rdfs:range rdf:resource="neo4j://graph.schema#Maintenance_contractor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_sys_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_tat">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#weapon_control_system_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_rounds_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars_manufacturer">
+	<rdfs:label>as_motars_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_rounds_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_tat">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_rounds_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam">
+	<rdfs:label>missile_sam</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#combat_data_system">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_launcher_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#manufacturer">
+	<rdfs:label>manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#displacement">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_classification_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_classification_2">
+	<rdfs:label>ship_classification_2</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#maintenance_contractor">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#owner_organisation">
+	<rdfs:label>owner_organisation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_rounds_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#survelliance_radar">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Coastal_patrol_vessel">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_id">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#helicopter">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#owner_country">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fire_control_radar_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#navigation_radar">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#source_file">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#helicopter_manufacturer">
+	<rdfs:label>helicopter_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#survelliance_radar">
+	<rdfs:label>survelliance_radar</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_material">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#range">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_2_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#power_mw">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#towed_sonar">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_part_no">
+	<rdfs:label>crankshaft_part_no</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures">
+	<rdfs:label>torpedo_countermeasures</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2_quantity">
+	<rdfs:label>mine_2_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#source_file">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Maintenance_Contractor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#has_vessels_in_service">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#towed_sonar_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#subclass_name">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#length">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures">
+	<rdfs:label>mine_countermeasures</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_qty">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_manufacturer">
+	<rdfs:label>engine_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#survelliance_radar_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_id">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#source_file">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1_manufacturer">
+	<rdfs:label>engine_1_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_1">
+	<rdfs:label>electro_optic_system_1</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Vessel">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#helicopter">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MAINTAINED_BY">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	<rdfs:range rdf:resource="neo4j://graph.schema#Maintenance_Contractor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_launcher_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_sys_quantity">
+	<rdfs:label>mine_countermeasures_sys_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures_launcher_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_qty">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fixed_wing_aircraft_manufacturer">
+	<rdfs:label>fixed_wing_aircraft_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1_manufacturer">
+	<rdfs:label>mine_1_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#survelliance_radar_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1">
+	<rdfs:label>gun_1</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#HAS_ENGINE">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#combat_data_system">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_sys_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Vessel">
+	<rdfs:label>Vessel</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_classification_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#beam">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_part_no">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1_quantity">
+	<rdfs:label>engine_1_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_classification_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#navigation_radar">
+	<rdfs:label>navigation_radar</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_1_manufacturer">
+	<rdfs:label>electro_optic_system_1_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#subclass_name">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#HAS_ENGINE">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_launcher_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#power_mw">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_rounds_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_rounds_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Engine_Manufacturer">
+	<rdfs:label>Engine_Manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#weapon_control_system_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#description">
+	<rdfs:label>description</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2_manufacturer">
+	<rdfs:label>electronic_countermeasure_2_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Coastal_patrol_vessel">
+	<rdfs:label>Coastal_patrol_vessel</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_classification_1">
+	<rdfs:label>ship_classification_1</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#survelliance_radar_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#owner_organisation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#HAS_ENGINE">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#weapon_control_system_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#beam">
+	<rdfs:label>beam</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#beam">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasure_rounds_quantity">
+	<rdfs:label>torpedo_countermeasure_rounds_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MMEA_Vessel">
+	<rdfs:label>MMEA_Vessel</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#maintenance_contractor">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#range">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#vessel_class">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#combat_data_system_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_name">
+	<rdfs:label>crankshaft_name</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_collection">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#draught">
+	<rdfs:label>draught</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_manufacturer">
+	<rdfs:label>mine_countermeasures_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2_quantity">
+	<rdfs:label>electronic_countermeasure_2_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#hull_mounted_sonar">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_part_no">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fire_control_radar_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures_manufacturer">
+	<rdfs:label>anti_missile_defence_countermeasures_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_name">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MANUFACTURED_BY">
+	<rdfs:range rdf:resource="neo4j://graph.schema#Engine_manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#image">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_sys_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_qty">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_2">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_material">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#has_vessels_in_service">
+	<rdfs:label>has_vessels_in_service</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MMEA_Vessel">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#weapon_control_system">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_2">
+	<rdfs:label>electro_optic_system_2</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1_quantity">
+	<rdfs:label>electronic_countermeasure_1_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1">
+	<rdfs:label>engine_1</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#speed">
+	<rdfs:label>speed</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#official_distributor_list">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_2_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Engine_Manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures_launcher_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_launcher_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_classification_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#hull_mounted_sonar_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_collection">
+	<rdfs:label>node_collection</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#navigation_radar">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MAINTAINED_BY">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#personnel_capacity">
+	<rdfs:label>personnel_capacity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_collection">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#towed_sonar">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_tat">
+	<rdfs:label>piston_tat</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Organisation">
+	<rdfs:label>Organisation</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#helicopter_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Engine_manufacturer">
+	<rdfs:label>Engine_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fire_control_radar">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#vessel_class">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3">
+	<rdfs:label>mine_3</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Mmea_vessel">
+	<rdfs:label>Mmea_vessel</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#source_file">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fire_control_radar_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3_manufacturer">
+	<rdfs:label>mine_3_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#subclass_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#source_file">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Maintenance_contractor"/>
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Engine_manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#official_distributor_list">
+	<rdfs:label>official_distributor_list</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures">
+	<rdfs:label>anti_missile_defence_countermeasures</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#towed_sonar">
+	<rdfs:label>towed_sonar</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#displacement">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_rounds_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_name">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_material">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MANUFACTURED_BY">
+	<rdfs:label>MANUFACTURED_BY</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#personnel_capacity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Engine_manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#length">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#navigation_radar_manufacturer">
+	<rdfs:label>navigation_radar_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#image">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#weapon_control_system">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#vessel_names">
+	<rdfs:label>vessel_names</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#description">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Engine_Manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_material">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#range">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fire_control_radar">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_id">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#combat_data_system">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#description">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Maintenance_Contractor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#combat_data_system_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_tat">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Maintenance_contractor">
+	<rdfs:label>Maintenance_contractor</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_launcher_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_builder">
+	<rdfs:label>ship_builder</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Vessel_engine">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_builder">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_2_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#official_distributor_list">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#helicopter_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#class_name">
+	<rdfs:label>class_name</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_2_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_name">
+	<rdfs:label>piston_name</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#displacement">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_collection">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Engine_Manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#range">
+	<rdfs:label>range</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets">
+	<rdfs:label>rockets</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures_manufacturer">
+	<rdfs:label>torpedo_countermeasures_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#class_name">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#vessel_class">
+	<rdfs:label>vessel_class</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes_quantity">
+	<rdfs:label>torpedoes_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#personnel_capacity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_rounds_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures_quantity">
+	<rdfs:label>anti_missile_defence_countermeasures_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#has_vessels_in_service">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_tat">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1_manufacturer">
+	<rdfs:label>gun_1_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#description">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Engine_manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#survelliance_radar">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#description">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Maintenance_contractor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasure_rounds_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Engine_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#speed_alternate_propulsion">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#hull_mounted_sonar_manufacturer">
+	<rdfs:label>hull_mounted_sonar_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_1_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Vessel_Engine">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#towed_sonar_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_1_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv_manufacturer">
+	<rdfs:label>auv_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#source_file">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Engine_Manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#vessel_names">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#survelliance_radar_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#image">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_designer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_launcher_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#range">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#combat_data_system_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_2">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#weapon_control_system_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_collection">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Maintenance_Contractor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#class_name">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MANUFACTURED_BY">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MAINTAINED_BY">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_2_manufacturer">
+	<rdfs:label>electro_optic_system_2_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#source_file">
+	<rdfs:label>source_file</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fuel_type">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges_quantity">
+	<rdfs:label>depth_charges_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_charge_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#maintenance_contractor">
+	<rdfs:label>maintenance_contractor</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_builder">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges">
+	<rdfs:label>depth_charges</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1_quantity">
+	<rdfs:label>gun_1_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_rounds_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_name">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_id">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#navigation_radar_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#length">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_classification_2">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_collection">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#combat_data_system_manufacturer">
+	<rdfs:label>combat_data_system_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes">
+	<rdfs:label>torpedoes</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges_manufacturer">
+	<rdfs:label>depth_charges_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#vessel_class">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#speed">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#image">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Maintenance_Contractor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_id">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:label>node_id</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_1_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_launcher_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_material">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1_quantity">
+	<rdfs:label>mine_1_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fire_control_radar">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_qty">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MANUFACTURED_BY">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1_manufacturer">
+	<rdfs:label>electronic_countermeasure_1_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_collection">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2">
+	<rdfs:label>electronic_countermeasure_2</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_2_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_charge_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_1">
+	<rdfs:label>comm_system_1</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_part_no">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars">
+	<rdfs:label>as_motars</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#hull_mounted_sonar">
+	<rdfs:label>hull_mounted_sonar</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_launcher_quantity">
+	<rdfs:label>rockets_launcher_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1">
+	<rdfs:label>mine_1</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv_quantity">
+	<rdfs:label>usv_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#speed_alternate_propulsion">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#length">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Engine_Manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#HAS_ENGINE">
+	<rdfs:range rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MAINTAINED_BY">
+	<rdfs:label>MAINTAINED_BY</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Maintenance_Contractor">
+	<rdfs:label>Maintenance_Contractor</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#power_mw">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#image">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Engine_Manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#maintenance_contractor">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#hull_mounted_sonar">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_1_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2_manufacturer">
+	<rdfs:label>engine_2_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fixed_wing_aircraft">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#description">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2_quantity">
+	<rdfs:label>engine_2_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm">
+	<rdfs:label>missile_ssm</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#draught">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#length">
+	<rdfs:label>length</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#survelliance_radar">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#source_file">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_charge_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#owner_organisation">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#speed_alternate_propulsion">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#hull_mounted_sonar_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#owner_country">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#hull_mounted_sonar">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_qty">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fixed_wing_aircraft_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#helicopter_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#weapon_control_system">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_id">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Maintenance_contractor"/>
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Engine_manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#beam">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_qty">
+	<rdfs:label>piston_qty</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_part_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_1">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#vessel_names">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#speed">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fire_control_radar">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fixed_wing_aircraft">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#displacement">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_qty">
+	<rdfs:label>crankshaft_qty</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_tat">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fuel_type">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_part_no">
+	<rdfs:label>piston_part_no</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_designer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv">
+	<rdfs:label>usv</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2_quantity">
+	<rdfs:label>gun_2_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fixed_wing_aircraft">
+	<rdfs:label>fixed_wing_aircraft</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_material">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasure_rounds_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures_launcher_quantity">
+	<rdfs:label>torpedo_countermeasures_launcher_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2">
+	<rdfs:label>engine_2</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#power_mw">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Mmea_vessel">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_material">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#vessel_names">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#maintenance_contractor">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_builder">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_manufacturer">
+	<rdfs:label>missile_sam_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_launcher_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#combat_data_system">
+	<rdfs:label>combat_data_system</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MANUFACTURED_BY">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#speed_alternate_propulsion">
+	<rdfs:label>speed_alternate_propulsion</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2">
+	<rdfs:label>mine_2</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_designer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#hull_mounted_sonar_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#HAS_ENGINE">
+	<rdfs:label>HAS_ENGINE</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#image">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Maintenance_contractor"/>
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Engine_manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_designer">
+	<rdfs:label>ship_designer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#towed_sonar_manufacturer">
+	<rdfs:label>towed_sonar_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#weapon_control_system">
+	<rdfs:label>weapon_control_system</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_material">
+	<rdfs:label>piston_material</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fixed_wing_aircraft_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_1_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fire_control_radar_manufacturer">
+	<rdfs:label>fire_control_radar_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fuel_type">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_collection">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Maintenance_contractor"/>
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Engine_manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_2_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_qty">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#navigation_radar">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#image">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_name">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#class_name">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_2_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_1_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#maintenance_contractor">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Maintenance_Contractor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_rounds_quantity">
+	<rdfs:label>missile_ssm_rounds_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2_manufacturer">
+	<rdfs:label>gun_2_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#official_distributor_list">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#description">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fixed_wing_aircraft">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_qty">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#draught">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3_quantity">
+	<rdfs:label>mine_3_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#survelliance_radar">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_1">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#navigation_radar">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_tat">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_part_no">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_launcher_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Vessel_engine">
+	<rdfs:label>Vessel_engine</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#owner_organisation">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#personnel_capacity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#power_mw">
+	<rdfs:label>power_mw</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_tat">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fixed_wing_aircraft_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#vessel_names">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#draught">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_launcher_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#has_vessels_in_service">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_launcher_quantity">
+	<rdfs:label>missile_ssm_launcher_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_qty">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#helicopter">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#beam">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_name">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#helicopter">
+	<rdfs:label>helicopter</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_rounds_quantity">
+	<rdfs:label>rockets_rounds_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_sys_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_rounds_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2">
+	<rdfs:label>gun_2</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#owner_country">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_builder">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#navigation_radar_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_manufacturer">
+	<rdfs:label>missile_ssm_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#subclass_name">
+	<rdfs:label>subclass_name</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_2_manufacturer">
+	<rdfs:label>comm_system_2_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#towed_sonar_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#speed">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_id">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Maintenance_Contractor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#image">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#towed_sonar_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv_quantity">
+	<rdfs:label>auv_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_2">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_material">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Vessel_Engine">
+	<rdfs:label>Vessel_Engine</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fixed_wing_aircraft_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#speed_alternate_propulsion">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fuel_type">
+	<rdfs:label>fuel_type</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_part_no">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#class_name">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_rounds_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#combat_data_system_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#source_file">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Maintenance_contractor">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#draught">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_designer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_countermeasures_charge_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav">
+	<rdfs:label>uav</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv">
+	<rdfs:label>auv</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#maintenance_contractor">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Maintenance_contractor"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes_manufacturer">
+	<rdfs:label>torpedoes_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_2_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_quantity">
+	<rdfs:label>engine_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fire_control_radar_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#owner_organisation">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_1_manufacturer">
+	<rdfs:label>comm_system_1_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures_launcher_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_1_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_id">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#personnel_capacity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#MANUFACTURED_BY">
+	<rdfs:range rdf:resource="neo4j://graph.schema#Engine_Manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_1_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine">
+	<rdfs:label>engine</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#towed_sonar">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_classification_2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_name">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#vessel_class">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_collection">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#source_file">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures_launcher_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#weapon_control_system_manufacturer">
+	<rdfs:label>weapon_control_system_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Maintenance_Contractor">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#hull_mounted_sonar_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electro_optic_system_2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#HAS_ENGINE">
+	<rdfs:range rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#ship_classification_1">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_2">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_2">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#weapon_control_system">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1">
+	<rdfs:label>electronic_countermeasure_1</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fire_control_radar">
+	<rdfs:label>fire_control_radar</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_tat">
+	<rdfs:label>crankshaft_tat</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedo_countermeasures">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#owner_country">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#displacement">
+	<rdfs:label>displacement</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_manufacturer">
+	<rdfs:label>rockets_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#as_motars_quantity">
+	<rdfs:label>as_motars_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#uav_quantity">
+	<rdfs:label>uav_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#hull_mounted_sonar">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_rounds_quantity">
+	<rdfs:label>missile_sam_rounds_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_ssm_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#comm_system_2">
+	<rdfs:label>comm_system_2</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#usv_manufacturer">
+	<rdfs:label>usv_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_rounds_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#has_vessels_in_service">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#fixed_wing_aircraft">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#survelliance_radar_manufacturer">
+	<rdfs:label>survelliance_radar_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#owner_country">
+	<rdfs:label>owner_country</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#image">
+	<rdfs:label>image</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_part_no">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_collection">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#navigation_radar_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#auv_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#combat_data_system">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_2_manufacturer">
+	<rdfs:label>mine_2_manufacturer</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#gun_1_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_1_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#anti_missile_defence_countermeasures_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#Organisation">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_part_no">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#subclass_name">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#speed">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Mmea_vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1_quantity">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_quantity">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#rockets_launcher_quantity">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#engine_1">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#image">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_2_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#node_id">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Engine_Manufacturer"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#missile_sam_launcher_quantity">
+	<rdfs:label>missile_sam_launcher_quantity</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#crankshaft_material">
+	<rdfs:label>crankshaft_material</rdfs:label>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#piston_tat">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#Vessel_Engine"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#torpedoes_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#mine_3_manufacturer">
+	<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#electronic_countermeasure_1_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#official_distributor_list">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#helicopter_manufacturer">
+	<rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges_manufacturer">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+<rdf:Description rdf:about="neo4j://graph.schema#depth_charges">
+	<rdfs:domain rdf:resource="neo4j://graph.schema#MMEA_Vessel"/>
+</rdf:Description>
+
+</rdf:RDF>

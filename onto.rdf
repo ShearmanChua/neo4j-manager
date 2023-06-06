@@ -1,0 +1,744 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<neo4j://graph.schema#gun_2> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "gun_2";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#fuel_type> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Vessel_engine>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "fuel_type" .
+
+<neo4j://graph.schema#towed_sonar> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "towed_sonar" .
+
+<neo4j://graph.schema#navigation_radar_manufacturer> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "navigation_radar_manufacturer";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel> .
+
+<neo4j://graph.schema#missile_ssm_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "missile_ssm_manufacturer" .
+
+<neo4j://graph.schema#mine_countermeasures_charge_quantity> a owl:DatatypeProperty;
+  rdfs:label "mine_countermeasures_charge_quantity";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#torpedo_countermeasure_rounds_quantity> a owl:DatatypeProperty;
+  rdfs:label "torpedo_countermeasure_rounds_quantity";
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#mine_3> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "mine_3" .
+
+<neo4j://graph.schema#helicopter> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "helicopter" .
+
+<neo4j://graph.schema#uav_manufacturer> a owl:DatatypeProperty;
+  rdfs:label "uav_manufacturer";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#ship_classification_1> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "ship_classification_1" .
+
+<neo4j://graph.schema#MAINTAINED_BY> a owl:ObjectProperty;
+  rdfs:range <neo4j://graph.schema#Maintenance_contractor>, <neo4j://graph.schema#Maintenance_Contractor>;
+  rdfs:domain <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Vessel_Engine>;
+  rdfs:label "MAINTAINED_BY" .
+
+<neo4j://graph.schema#mine_countermeasures_sys_quantity> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "mine_countermeasures_sys_quantity";
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#missile_sam_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "missile_sam_manufacturer" .
+
+<neo4j://graph.schema#crankshaft_tat> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Vessel_engine>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "crankshaft_tat" .
+
+<neo4j://graph.schema#weapon_control_system_manufacturer> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "weapon_control_system_manufacturer" .
+
+<neo4j://graph.schema#missile_ssm_rounds_quantity> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "missile_ssm_rounds_quantity" .
+
+<neo4j://graph.schema#engine_2_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "engine_2_manufacturer" .
+
+<neo4j://graph.schema#as_motars_manufacturer> a owl:DatatypeProperty;
+  rdfs:label "as_motars_manufacturer";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#auv> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "auv" .
+
+<neo4j://graph.schema#as_motars_quantity> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "as_motars_quantity" .
+
+<neo4j://graph.schema#missile_sam_rounds_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "missile_sam_rounds_quantity" .
+
+<neo4j://graph.schema#mine_2_manufacturer> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "mine_2_manufacturer" .
+
+<neo4j://graph.schema#piston_tat> a owl:DatatypeProperty;
+  rdfs:label "piston_tat";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Vessel_Engine> .
+
+<neo4j://graph.schema#depth_charges_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "depth_charges_quantity" .
+
+<neo4j://graph.schema#missile_ssm> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "missile_ssm" .
+
+<neo4j://graph.schema#depth_charges_manufacturer> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "depth_charges_manufacturer" .
+
+<neo4j://graph.schema#rockets_rounds_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "rockets_rounds_quantity";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#electronic_countermeasure_1> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "electronic_countermeasure_1" .
+
+<neo4j://graph.schema#missile_sam> a owl:DatatypeProperty;
+  rdfs:label "missile_sam";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#combat_data_system> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "combat_data_system";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#mine_2> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "mine_2" .
+
+<neo4j://graph.schema#missile_ssm_launcher_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "missile_ssm_launcher_quantity" .
+
+<neo4j://graph.schema#manufacturer> a owl:DatatypeProperty;
+  rdfs:label "manufacturer";
+  rdfs:domain <neo4j://graph.schema#Engine_Manufacturer>, <neo4j://graph.schema#Engine_manufacturer>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#rockets_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "rockets_manufacturer" .
+
+<neo4j://graph.schema#displacement> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "displacement" .
+
+<neo4j://graph.schema#anti_missile_defence_countermeasures_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "anti_missile_defence_countermeasures_manufacturer";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#electronic_countermeasure_2> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "electronic_countermeasure_2" .
+
+<neo4j://graph.schema#ship_classification_2> a owl:DatatypeProperty;
+  rdfs:label "ship_classification_2";
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#maintenance_contractor> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "maintenance_contractor";
+  rdfs:domain <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Vessel_Engine>,
+    <neo4j://graph.schema#Maintenance_Contractor>, <neo4j://graph.schema#Maintenance_contractor> .
+
+<neo4j://graph.schema#owner_organisation> a owl:DatatypeProperty;
+  rdfs:label "owner_organisation";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#usv> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "usv" .
+
+<neo4j://graph.schema#survelliance_radar> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "survelliance_radar";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#Coastal_patrol_vessel> a owl:Class;
+  rdfs:label "Coastal_patrol_vessel" .
+
+<neo4j://graph.schema#node_id> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#MMEA_Vessel>,
+    <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#Maintenance_contractor>,
+    <neo4j://graph.schema#Engine_manufacturer>, <neo4j://graph.schema#Maintenance_Contractor>,
+    <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Engine_Manufacturer>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "node_id" .
+
+<neo4j://graph.schema#owner_country> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "owner_country" .
+
+<neo4j://graph.schema#fire_control_radar_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "fire_control_radar_manufacturer" .
+
+<neo4j://graph.schema#engine_2> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "engine_2";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#navigation_radar> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "navigation_radar";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#source_file> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Maintenance_Contractor>,
+    <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Maintenance_contractor>,
+    <neo4j://graph.schema#Engine_manufacturer>, <neo4j://graph.schema#Engine_Manufacturer>,
+    <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "source_file";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#helicopter_manufacturer> a owl:DatatypeProperty;
+  rdfs:label "helicopter_manufacturer";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#usv_quantity> a owl:DatatypeProperty;
+  rdfs:label "usv_quantity";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#crankshaft_material> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Vessel_engine>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "crankshaft_material" .
+
+<neo4j://graph.schema#range> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "range" .
+
+<neo4j://graph.schema#comm_system_2_manufacturer> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "comm_system_2_manufacturer" .
+
+<neo4j://graph.schema#power_mw> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Vessel_engine>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "power_mw" .
+
+<neo4j://graph.schema#crankshaft_part_no> a owl:DatatypeProperty;
+  rdfs:label "crankshaft_part_no";
+  rdfs:domain <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Vessel_engine>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#torpedo_countermeasures> a owl:DatatypeProperty;
+  rdfs:label "torpedo_countermeasures";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#mine_2_quantity> a owl:DatatypeProperty;
+  rdfs:label "mine_2_quantity";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#crankshaft_name> a owl:DatatypeProperty;
+  rdfs:label "crankshaft_name";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Vessel_Engine> .
+
+<neo4j://graph.schema#gun_2_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "gun_2_manufacturer" .
+
+<neo4j://graph.schema#engine_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Vessel_engine>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "engine_quantity" .
+
+<neo4j://graph.schema#has_vessels_in_service> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "has_vessels_in_service";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#towed_sonar_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "towed_sonar_manufacturer";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#subclass_name> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "subclass_name" .
+
+<neo4j://graph.schema#torpedoes_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "torpedoes_quantity";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#length> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "length" .
+
+<neo4j://graph.schema#mine_countermeasures> a owl:DatatypeProperty;
+  rdfs:label "mine_countermeasures";
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#piston_qty> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Vessel_Engine>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "piston_qty" .
+
+<neo4j://graph.schema#torpedoes_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "torpedoes_manufacturer";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#engine_manufacturer> a owl:DatatypeProperty;
+  rdfs:label "engine_manufacturer";
+  rdfs:domain <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Vessel_engine>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#electronic_countermeasure_1_manufacturer> a owl:DatatypeProperty;
+  rdfs:label "electronic_countermeasure_1_manufacturer";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#survelliance_radar_manufacturer> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "survelliance_radar_manufacturer" .
+
+<neo4j://graph.schema#mine_countermeasures_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "mine_countermeasures_manufacturer";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#engine_1_manufacturer> a owl:DatatypeProperty;
+  rdfs:label "engine_1_manufacturer";
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#engine_1_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "engine_1_quantity";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#electro_optic_system_1> a owl:DatatypeProperty;
+  rdfs:label "electro_optic_system_1";
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#Vessel> a owl:Class;
+  rdfs:label "Vessel" .
+
+<neo4j://graph.schema#rockets_launcher_quantity> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "rockets_launcher_quantity" .
+
+<neo4j://graph.schema#electronic_countermeasure_2_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "electronic_countermeasure_2_manufacturer" .
+
+<neo4j://graph.schema#torpedo_countermeasures_launcher_quantity> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "torpedo_countermeasures_launcher_quantity";
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#fixed_wing_aircraft_manufacturer> a owl:DatatypeProperty;
+  rdfs:label "fixed_wing_aircraft_manufacturer";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#mine_1_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "mine_1_quantity";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#mine_1_manufacturer> a owl:DatatypeProperty;
+  rdfs:label "mine_1_manufacturer";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#gun_1> a owl:DatatypeProperty;
+  rdfs:label "gun_1";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#HAS_ENGINE> a owl:ObjectProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Vessel_engine>;
+  rdfs:label "HAS_ENGINE" .
+
+<neo4j://graph.schema#beam> a owl:DatatypeProperty;
+  rdfs:label "beam";
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#piston_part_no> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Vessel_engine>;
+  rdfs:label "piston_part_no";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#electro_optic_system_1_manufacturer> a owl:DatatypeProperty;
+  rdfs:label "electro_optic_system_1_manufacturer";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#mine_3_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "mine_3_manufacturer";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#depth_charges> a owl:DatatypeProperty;
+  rdfs:label "depth_charges";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#Engine_Manufacturer> a owl:Class;
+  rdfs:label "Engine_Manufacturer" .
+
+<neo4j://graph.schema#description> a owl:DatatypeProperty;
+  rdfs:label "description";
+  rdfs:domain <neo4j://graph.schema#Engine_Manufacturer>, <neo4j://graph.schema#Maintenance_Contractor>,
+    <neo4j://graph.schema#Engine_manufacturer>, <neo4j://graph.schema#Maintenance_contractor>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#auv_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "auv_manufacturer";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#engine_1> a owl:DatatypeProperty;
+  rdfs:label "engine_1";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#usv_manufacturer> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "usv_manufacturer" .
+
+<neo4j://graph.schema#mine_1> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "mine_1";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#torpedo_countermeasures_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "torpedo_countermeasures_manufacturer";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#MMEA_Vessel> a owl:Class;
+  rdfs:label "MMEA_Vessel" .
+
+<neo4j://graph.schema#uav_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "uav_quantity" .
+
+<neo4j://graph.schema#engine> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Vessel_Engine>;
+  rdfs:label "engine" .
+
+<neo4j://graph.schema#vessel_class> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Vessel_Engine>;
+  rdfs:label "vessel_class";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#combat_data_system_manufacturer> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "combat_data_system_manufacturer" .
+
+<neo4j://graph.schema#mine_3_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "mine_3_quantity" .
+
+<neo4j://graph.schema#node_collection> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Engine_Manufacturer>,
+    <neo4j://graph.schema#Maintenance_Contractor>, <neo4j://graph.schema#Vessel_Engine>,
+    <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Maintenance_contractor>,
+    <neo4j://graph.schema#Engine_manufacturer>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "node_collection";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#draught> a owl:DatatypeProperty;
+  rdfs:label "draught";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#electronic_countermeasure_2_quantity> a owl:DatatypeProperty;
+  rdfs:label "electronic_countermeasure_2_quantity";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#hull_mounted_sonar> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "hull_mounted_sonar";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#as_motars> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "as_motars" .
+
+<neo4j://graph.schema#MANUFACTURED_BY> a owl:ObjectProperty;
+  rdfs:range <neo4j://graph.schema#Engine_manufacturer>, <neo4j://graph.schema#Engine_Manufacturer>;
+  rdfs:label "MANUFACTURED_BY";
+  rdfs:domain <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Vessel_Engine> .
+
+<neo4j://graph.schema#image> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>,
+    <neo4j://graph.schema#Maintenance_Contractor>, <neo4j://graph.schema#Engine_Manufacturer>,
+    <neo4j://graph.schema#Maintenance_contractor>, <neo4j://graph.schema#Engine_manufacturer>,
+    <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Vessel_Engine>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "image" .
+
+<neo4j://graph.schema#crankshaft_qty> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Vessel_engine>, <neo4j://graph.schema#Vessel_Engine>;
+  rdfs:label "crankshaft_qty" .
+
+<neo4j://graph.schema#electro_optic_system_2> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "electro_optic_system_2";
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#weapon_control_system> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "weapon_control_system" .
+
+<neo4j://graph.schema#electronic_countermeasure_1_quantity> a owl:DatatypeProperty;
+  rdfs:label "electronic_countermeasure_1_quantity";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#speed> a owl:DatatypeProperty;
+  rdfs:label "speed";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel> .
+
+<neo4j://graph.schema#official_distributor_list> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Vessel_engine>;
+  rdfs:label "official_distributor_list";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#comm_system_2> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "comm_system_2" .
+
+<neo4j://graph.schema#gun_1_quantity> a owl:DatatypeProperty;
+  rdfs:label "gun_1_quantity";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#missile_sam_launcher_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "missile_sam_launcher_quantity" .
+
+<neo4j://graph.schema#hull_mounted_sonar_manufacturer> a owl:DatatypeProperty;
+  rdfs:label "hull_mounted_sonar_manufacturer";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#personnel_capacity> a owl:DatatypeProperty;
+  rdfs:label "personnel_capacity";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#Organisation> a owl:Class;
+  rdfs:label "Organisation" .
+
+<neo4j://graph.schema#Engine_manufacturer> a owl:Class;
+  rdfs:label "Engine_manufacturer" .
+
+<neo4j://graph.schema#fire_control_radar> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "fire_control_radar" .
+
+<neo4j://graph.schema#Mmea_vessel> a owl:Class;
+  rdfs:label "Mmea_vessel" .
+
+<neo4j://graph.schema#anti_missile_defence_countermeasures> a owl:DatatypeProperty;
+  rdfs:label "anti_missile_defence_countermeasures";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#torpedoes> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "torpedoes";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#piston_name> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Vessel_engine>;
+  rdfs:label "piston_name";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#piston_material> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Vessel_Engine>, <neo4j://graph.schema#Vessel_engine>;
+  rdfs:label "piston_material";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#auv_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "auv_quantity";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#vessel_names> a owl:DatatypeProperty;
+  rdfs:label "vessel_names";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#rockets> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "rockets";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#Maintenance_contractor> a owl:Class;
+  rdfs:label "Maintenance_contractor" .
+
+<neo4j://graph.schema#ship_builder> a owl:DatatypeProperty;
+  rdfs:label "ship_builder";
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#Vessel_engine> a owl:Class;
+  rdfs:label "Vessel_engine" .
+
+<neo4j://graph.schema#electro_optic_system_2_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "electro_optic_system_2_manufacturer";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#class_name> a owl:DatatypeProperty;
+  rdfs:label "class_name";
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#anti_missile_defence_countermeasures_quantity> a owl:DatatypeProperty;
+  rdfs:label "anti_missile_defence_countermeasures_quantity";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel> .
+
+<neo4j://graph.schema#gun_2_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "gun_2_quantity";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#gun_1_manufacturer> a owl:DatatypeProperty;
+  rdfs:label "gun_1_manufacturer";
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#speed_alternate_propulsion> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "speed_alternate_propulsion" .
+
+<neo4j://graph.schema#comm_system_1_manufacturer> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:label "comm_system_1_manufacturer" .
+
+<neo4j://graph.schema#Vessel_Engine> a owl:Class;
+  rdfs:label "Vessel_Engine" .
+
+<neo4j://graph.schema#engine_2_quantity> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#MMEA_Vessel>, <neo4j://graph.schema#Mmea_vessel>;
+  rdfs:label "engine_2_quantity";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#ship_designer> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "ship_designer" .
+
+<neo4j://graph.schema#comm_system_1> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "comm_system_1";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .
+
+<neo4j://graph.schema#uav> a owl:DatatypeProperty;
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string>;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "uav" .
+
+<neo4j://graph.schema#Maintenance_Contractor> a owl:Class;
+  rdfs:label "Maintenance_Contractor" .
+
+<neo4j://graph.schema#fixed_wing_aircraft> a owl:DatatypeProperty;
+  rdfs:domain <neo4j://graph.schema#Mmea_vessel>, <neo4j://graph.schema#MMEA_Vessel>;
+  rdfs:label "fixed_wing_aircraft";
+  rdfs:range <http://www.w3.org/2001/XMLSchema#string> .

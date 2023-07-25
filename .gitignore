@@ -1,3 +1,5 @@
 venv
 data
 graph_data
+neo4j-manager.tar
+neo4j.tar

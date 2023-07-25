@@ -9,14 +9,15 @@ services:
     container_name: "neo-gds"
     volumes:
       - ../graph_data/my_data:/data
-      - ../graph_data/my_data:/var/lib/neo4j/import
+      - ../graph_data/my_data/var:/var/lib/neo4j/import
+      - ../graph_data/my_data/conf:/var/lib/neo4j/conf
     ports:
       - "7474:7474"
       - "7687:7687"
     environment:
       - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
       - NEO4J_AUTH=${NEO4J_USERNAME}/${NEO4J_PASSWORD}
-      - NEO4JLABS_PLUGINS=["apoc", "graph-data-science"]
+      - NEO4JLABS_PLUGINS=["apoc", "graph-data-science", "n10s"]
       - apoc.import.file.enabled=true
       - apoc.export.file.enabled=true
       - apoc.export.json.all=true
